@@ -1,4 +1,4 @@
-namespace Session01
+namespace Session02
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Session01
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormSignin());
+            Application.Run(new Form1());
         }
     }
 }
