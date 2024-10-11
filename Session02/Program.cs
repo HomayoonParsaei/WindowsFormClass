@@ -12,10 +12,9 @@ namespace Session02
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
+            
+ 
         }
     }
 }
-
-
-//git commit --amend
-//git push --force
