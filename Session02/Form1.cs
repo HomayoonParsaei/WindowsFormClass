@@ -1,5 +1,7 @@
+using Session02.Enums;
 using Session02.Models;
 using Session02.Utilities;
+#nullable disable
 
 
 namespace Session02
@@ -20,7 +22,10 @@ namespace Session02
             string nationalCode = textBoxNationalCode.Text;
             DateOnly dateOfBirth = DateOnly.Parse(dateTimePickerDateOFBirth.Text);
 
-            if (string.IsNullOrEmpty(firstName)
+            Enum.TryParse(comboBoxGender.Text, out Gender gender);
+
+
+                if (string.IsNullOrEmpty(firstName)
                 || string.IsNullOrEmpty(lastName)
                 || string.IsNullOrEmpty(phoneNumber)
                 || string.IsNullOrEmpty(nationalCode))
@@ -43,7 +48,8 @@ namespace Session02
                 lastName: lastName,
                 phoneNumber: phoneNumber,
                 dateOfBirth: dateOfBirth,
-                nationalCode: nationalCode
+                nationalCode: nationalCode,
+                gender :gender
                 );
 
             textBoxFullName.Text = student.FullName;
@@ -69,7 +75,18 @@ namespace Session02
             func(Controls);
         }
 
+
+        public void SetComboBoxesDataSource()
+        {
+            //   comboBoxGender.Items.Add(Gender.Male);
+            comboBoxGender.DataSource = GenderFriendlyText.GetGenderFriendlyTextsList();
+        }
        
+            //comboBoxPublisher.DataSource = PublisherService.GetList;
+            //comboBoxPublisher.ValueMember = "Id";
+            //comboBoxPublisher.DisplayMember = "Title";
+
+
     }
 }
 

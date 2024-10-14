@@ -12,8 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wiki", "Wiki", "{4623AFCE-28E5-47BA-AF23-20B51A9D3551}"
 	ProjectSection(SolutionItems) = preProject
 		Wiki\AccessModifiers.md = Wiki\AccessModifiers.md
-		Markdown\GUID.md = Markdown\GUID.md
-		Markdown\UUID.md = Markdown\UUID.md
+		Wiki\GUID.md = Wiki\GUID.md
+		Wiki\Enum.TryParse.md = Wiki\Enum.TryParse.md
 	EndProjectSection
 EndProject
 Global

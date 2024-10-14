@@ -1,4 +1,5 @@
-﻿namespace Session02.Models
+﻿using Session02.Enum;
+namespace Session02.Models
 {
     public class User
     {
@@ -7,7 +8,7 @@
         public DateOnly DateOfBirth { get; protected set; }
         public string NationalCode { get; protected set; }
         public string PhoneNumber { get; protected set; }
-        public short Gender { get; protected set; }
+        public Gender Gender { get; protected set; }
         public string FullName
         {
             get
