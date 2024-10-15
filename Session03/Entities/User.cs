@@ -1,7 +1,8 @@
 ﻿using Session02.Enums;
+using Session03.Models;
 namespace Session02.Models
 {
-    public class User
+    public class User : IBaseEntity
     {
         public string FirstName { get; protected set; }
         public string LastName { get; protected set; }

@@ -7,6 +7,8 @@ namespace Session02.Models
 {
     public class Student : User
     {
+        //  ++++++++++++++++++++++++++++++++++++++++      Snippet     ++++++++++++++++++++++++++++++++++++++++
+
         //  Name(or shortcut)                           Description                           Valid locations to insert snippet
         //        ctor                 Creates a constructor for the containing class.                 Inside a class.
 
@@ -24,7 +26,6 @@ namespace Session02.Models
             Gender = gender;
             
         }
-        public int Id { get; set; }  
         public void ChangeFirstName (string firstName) => FirstName = firstName;
     }
 }

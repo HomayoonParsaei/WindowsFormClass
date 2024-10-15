@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "Console\Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wiki", "Wiki", "{4623AFCE-28E5-47BA-AF23-20B51A9D3551}"
 	ProjectSection(SolutionItems) = preProject
-		Wiki\AccessModifiers.md = Wiki\AccessModifiers.md
+		Wiki\Access Modifiers.md = Wiki\Access Modifiers.md
 		Wiki\Enum.TryParse.md = Wiki\Enum.TryParse.md
 		Wiki\GUID.md = Wiki\GUID.md
+		Wiki\Naming Conventions Microsoft.md = Wiki\Naming Conventions Microsoft.md
+		Wiki\Naming Conventions.md = Wiki\Naming Conventions.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session03", "Session03\Session03.csproj", "{D57A1CE9-54CD-4BA7-9328-6540F5CB9BD0}"
