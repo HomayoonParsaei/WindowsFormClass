@@ -1,8 +1,9 @@
 ﻿using Session02.Enums;
+using Session03.Entities.Interfaces;
 using Session03.Models;
 namespace Session02.Models
 {
-    public class User : IBaseEntity
+    public class User : IBaseEntity, ICreateableEntity, IDeletableEntity
     {
         public string FirstName { get; protected set; }
         public string LastName { get; protected set; }
@@ -17,5 +18,12 @@ namespace Session02.Models
                 return FirstName + " " + LastName;
             }
         }
+
+        public int Id { get; set; }
+        public int CreatedByUserId { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public bool IsDeleted { get; set; }
+        public int DeletedByUserId { get; set; }
+        public DateTime DeletedAt { get; set; }
     }
 }
