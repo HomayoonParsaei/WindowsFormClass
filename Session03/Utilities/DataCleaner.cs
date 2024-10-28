@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#nullable disable
 
 namespace Session02.Utilities
 {
     public static class DataCleaner
     {
+ 
+
 
         /// <summary>
         ///Verify the phone number and ensure it follows the correct format.
@@ -25,5 +23,10 @@ namespace Session02.Utilities
         {
             return nationalCode;
         }
+
+
+   
+
+
     }
 }

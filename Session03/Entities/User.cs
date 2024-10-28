@@ -5,6 +5,10 @@ namespace Session02.Models
 {
     public class User : IBaseEntity, ICreateableEntity, IDeletableEntity
     {
+        #region Constructors
+        #endregion
+
+        #region Properties
         public string FirstName { get; protected set; }
         public string LastName { get; protected set; }
         public DateOnly DateOfBirth { get; protected set; }
@@ -17,7 +21,21 @@ namespace Session02.Models
             {
                 return FirstName + " " + LastName;
             }
+        public int Id { get; set; }
+        public int CreatedByUserId { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public bool IsDeleted { get; set; }
+        public int DeletedByUserId { get; set; }
+        public DateTime DeletedAt { get; set; }
         }
+<<<<<<< HEAD
+        #endregion
+
+        #region Methods
+        #endregion
+
+
+=======
 
         public int Id { get; set; }
         public int CreatedByUserId { get; set; }
@@ -25,5 +43,6 @@ namespace Session02.Models
         public bool IsDeleted { get; set; }
         public int DeletedByUserId { get; set; }
         public DateTime DeletedAt { get; set; }
+>>>>>>> b9ca5ce6224ef868b26f04ae624dcd54eb89ee92
     }
 }

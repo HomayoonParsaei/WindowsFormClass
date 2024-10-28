@@ -9,6 +9,7 @@ namespace Session03.Models
 {
     public class Category : IBaseEntity, ICreateableEntity, IDeletableEntity
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public int Id { get; set; }
         public int CreatedByUserId { get; set; }
