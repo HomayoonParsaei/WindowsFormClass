@@ -1,6 +1,7 @@
 using Session02.Enums;
 using Session02.Models;
 using Session02.Utilities;
+using Session03.Utilities;
 using System.Windows.Forms;
 using System.Xml.Linq;
 #nullable disable
@@ -31,7 +32,6 @@ namespace Session02
             if (!IsEntryDataValid()) return;
             AddStudent();
 
-            phoneNumber = DataCleaner.CleanPhoneNumber(phoneNumber);
 
 
             // C# Trim()
@@ -46,8 +46,8 @@ namespace Session02
         {
             firstName = textBoxFirstName.Text;
             lastName = textBoxPhoneNumber.Text;
-            phoneNumber = textBoxPhoneNumber.Text;
-            nationalCode = textBoxNationalCode.Text;
+            phoneNumber = textBoxPhoneNumber.Text.CleanPhoneNumber() ;
+            nationalCode = textBoxNationalCode.Text.CleanNationalCode();
             dateOfBirth = DateOnly.Parse(dateTimePickerDateOFBirth.Text);
             gender = (Gender)Enum.Parse(typeof(Gender), comboBoxGender.Text);
             return (firstName, lastName, phoneNumber, nationalCode, dateOfBirth, gender);
