@@ -9,6 +9,7 @@ namespace Session03.Models
 {
     public class Category : IBaseEntity
     {
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }
