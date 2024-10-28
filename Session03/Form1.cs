@@ -25,19 +25,7 @@ namespace Session02
 
             Enum.TryParse(comboBoxGender.Text, out Gender gender);
 
-
-                if (string.IsNullOrEmpty(firstName)
-                || string.IsNullOrEmpty(lastName)
-                || string.IsNullOrEmpty(phoneNumber)
-                || string.IsNullOrEmpty(nationalCode))
-            {
-                MessageBox.Show("Please enter valid data.");
-                return;
-            }
-            else
-            {
-                phoneNumber = DataCleaner.CleanPhoneNumber(phoneNumber);
-            }
+            IsEnterdDataValid(firstName, lastName, ref phoneNumber, nationalCode);
 
             // C# Trim()
             // is a string method. This method is used to removes all leading and trailing white-space characters from the current String object.
@@ -50,7 +38,7 @@ namespace Session02
                 phoneNumber: phoneNumber,
                 dateOfBirth: dateOfBirth,
                 nationalCode: nationalCode,
-                gender :gender
+                gender: gender
                 );
 
             textBoxFullName.Text = student.FullName;
@@ -58,6 +46,22 @@ namespace Session02
             MessageBox.Show("Register Successfully.");
             ClearTextBoxes();
 
+        }
+
+        private static bool IsEnterdDataValid(string firstName, string lastName, ref string phoneNumber, string nationalCode)
+        {
+            if (string.IsNullOrEmpty(firstName) || 
+                string.IsNullOrEmpty(lastName) ||
+                string.IsNullOrEmpty(phoneNumber) || 
+                string.IsNullOrEmpty(nationalCode))
+            {
+                MessageBox.Show("Please enter valid data.");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         private void ClearTextBoxes()

@@ -1,4 +1,4 @@
-﻿using Session02.Enum;
+﻿using Session02.Enums;
 namespace Session02.Models
 {
     public class User
