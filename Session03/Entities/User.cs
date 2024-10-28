@@ -28,11 +28,21 @@ namespace Session02.Models
         public int DeletedByUserId { get; set; }
         public DateTime DeletedAt { get; set; }
         }
+<<<<<<< HEAD
         #endregion
 
         #region Methods
         #endregion
 
 
+=======
+
+        public int Id { get; set; }
+        public int CreatedByUserId { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public bool IsDeleted { get; set; }
+        public int DeletedByUserId { get; set; }
+        public DateTime DeletedAt { get; set; }
+>>>>>>> b9ca5ce6224ef868b26f04ae624dcd54eb89ee92
     }
 }

@@ -1,7 +1,9 @@
 ﻿
+using Session03.Entities.Interfaces;
+
 namespace Session02.Models
 {
-    public class Teacher
+    public class Teacher : IBaseEntity, ICreateableEntity, IDeletableEntity
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -16,6 +18,12 @@ namespace Session02.Models
             {
                 return FirstName+" "+LastName;
             }
-        } 
+        }
+
+        public bool IsDeleted { get ; set ; }
+        public int DeletedByUserId { get ; set ; }
+        public DateTime DeletedAt { get ; set ; }
+        public int CreatedByUserId { get ; set ; }
+        public DateTime CreatedAt { get ; set ; }
     }
 }

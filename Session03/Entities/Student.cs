@@ -1,7 +1,12 @@
 ﻿
 using Session02.Enums;
 using Session03.Entities.Interfaces;
+<<<<<<< HEAD
 
+=======
+using System.Collections.Generic;
+using System.ComponentModel;
+>>>>>>> b9ca5ce6224ef868b26f04ae624dcd54eb89ee92
 
 namespace Session02.Models
 {

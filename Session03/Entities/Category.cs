@@ -7,9 +7,15 @@ using System.Threading.Tasks;
 
 namespace Session03.Models
 {
-    public class Category : IBaseEntity
+    public class Category : IBaseEntity, ICreateableEntity, IDeletableEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public int Id { get; set; }
+        public int CreatedByUserId { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public bool IsDeleted { get; set; }
+        public int DeletedByUserId { get; set; }
+        public DateTime DeletedAt { get; set; }
     }
 }
