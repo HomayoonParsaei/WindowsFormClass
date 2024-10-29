@@ -1,5 +1,5 @@
 ﻿#nullable disable
-namespace Session03.DTOs
+namespace CurrentProject.DTOs
 {
     public sealed class AddStudent
     {

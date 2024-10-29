@@ -1,7 +1,7 @@
-﻿using Session02.Enums;
-using Session03.Entities.Interfaces;
-using Session03.Models;
-namespace Session02.Models
+﻿using BaseBackend.Enums;
+using BaseBackend.Entities.Interfaces;
+using BaseBackend.Entities;
+namespace BaseBackend.Entities
 {
     public class User : IBaseEntity, ICreateableEntity, IDeletableEntity
     {

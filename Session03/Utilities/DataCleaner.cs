@@ -1,6 +1,6 @@
 ﻿#nullable disable
 
-namespace Session02.Utilities
+namespace CurrentProject.Utilities
 {
     public static class DataCleaner
     {

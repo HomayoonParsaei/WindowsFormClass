@@ -1,11 +1,11 @@
-﻿using Session03.Entities.Interfaces;
+﻿using BaseBackend.Entities.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Session02.Models
+namespace BaseBackend.Entities
 {
     public class StudentCourse : IBaseEntity, ICreateableEntity, IDeletableEntity
     {

@@ -1,4 +1,4 @@
-﻿namespace Session03.Entities.AbstractClasses
+﻿namespace BaseBackend.Entities.AbstractClasses
 {
     public abstract class BaseEntity
     {

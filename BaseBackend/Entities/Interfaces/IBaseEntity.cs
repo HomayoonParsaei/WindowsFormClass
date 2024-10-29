@@ -1,5 +1,5 @@
 ﻿
-namespace Session03.Entities.Interfaces
+namespace BaseBackend.Entities.Interfaces
 {
     public interface IBaseEntity
     {

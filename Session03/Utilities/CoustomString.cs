@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Session03.Utilities
+namespace CurrentProject.Utilities
 {
     public static class CoustomString
     {

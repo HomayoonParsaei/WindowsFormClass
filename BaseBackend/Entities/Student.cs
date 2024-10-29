@@ -1,5 +1,5 @@
-﻿using Session02.Enums;
-namespace Session02.Models
+﻿using BaseBackend.Enums;
+namespace BaseBackend.Entities
 {
     public class Student : User
     {

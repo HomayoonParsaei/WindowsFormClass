@@ -1,4 +1,4 @@
-namespace Session02
+namespace CurrentProject
 {
     internal static class Program
     {

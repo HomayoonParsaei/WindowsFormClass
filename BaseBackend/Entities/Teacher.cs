@@ -1,7 +1,7 @@
 ﻿
-using Session03.Entities.Interfaces;
+using BaseBackend.Entities.Interfaces;
 
-namespace Session02.Models
+namespace BaseBackend.Entities
 {
     public class Teacher : IBaseEntity, ICreateableEntity, IDeletableEntity
     {

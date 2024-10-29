@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Session02.Enums
+namespace BaseBackend.Enums
 {
     public enum Gender
     {

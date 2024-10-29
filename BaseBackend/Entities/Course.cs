@@ -1,8 +1,8 @@
-﻿using Session03.Entities.Interfaces;
+﻿using BaseBackend.Entities.Interfaces;
 #nullable disable
 
 
-namespace Session02.Models
+namespace BaseBackend.Entities
 {
     public class Course : IBaseEntity, ICreateableEntity, IDeletableEntity
     {

@@ -6,5 +6,7 @@ namespace FinanceLearningCSharp
         {
             InitializeComponent();
         }
+
+       
     }
 }

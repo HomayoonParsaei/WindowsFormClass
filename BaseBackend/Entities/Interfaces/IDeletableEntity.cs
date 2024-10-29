@@ -1,6 +1,7 @@
-﻿namespace Session03.Entities.AbstractClasses
+﻿
+namespace BaseBackend.Entities.Interfaces
 {
-    public abstract class DeletableEntity
+    public interface IDeletableEntity
     {
         public bool IsDeleted { get; set; }
         public int DeletedByUserId { get; set; }

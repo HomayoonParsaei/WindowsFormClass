@@ -1,10 +1,8 @@
-
-namespace Session03.Entities.Interfaces
+﻿namespace BaseBackend.Entities.AbstractClasses
 {
-    internal interface ICreateableEntity
+    public abstract class CreateableEntity
     {
         public int CreatedByUserId { get; set; }
         public DateTime CreatedAt { get; set; }
     }
-
 }

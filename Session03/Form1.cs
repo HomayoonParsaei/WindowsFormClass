@@ -1,13 +1,11 @@
-using Session02.Enums;
-using Session02.Models;
-using Session02.Utilities;
-using Session03.Utilities;
-using System.Windows.Forms;
-using System.Xml.Linq;
+using CurrentProject.Utilities;
+using BaseBackend.Entities;
+using BaseBackend.Enums;
+
 #nullable disable
 
 
-namespace Session02
+namespace CurrentProject
 {
     public partial class Form1 : Form
     {

@@ -28,12 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            menuStrip1 = new MenuStrip();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { toolStripSeparator1 });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(125, 20);
+            toolStripMenuItem1.Text = "toolStripMenuItem1";
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(177, 6);
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "Form1";
+            Text = "Form1";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripSeparator toolStripSeparator1;
     }
 }

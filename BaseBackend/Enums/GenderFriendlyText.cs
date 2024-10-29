@@ -1,4 +1,4 @@
-﻿namespace Session02.Enums
+﻿namespace BaseBackend.Enums
 {
 
     public static class GenderFriendlyText
