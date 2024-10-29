@@ -1,8 +1,8 @@
 ﻿
 namespace BaseBackend.Entities.Interfaces
 {
-    public interface IBaseEntity
+    internal interface IBaseEntity
     {
-        public int Id { get; set; }
+        internal int Id { get; set; }
     }
 }
